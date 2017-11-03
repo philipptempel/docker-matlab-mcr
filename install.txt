@@ -1,0 +1,3 @@
+destinationFolder=/usr/sbin/mcr/
+agreeToLicense=yes
+mode=silent
