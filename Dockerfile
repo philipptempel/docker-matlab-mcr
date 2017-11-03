@@ -16,7 +16,7 @@ RUN apt-get install -yq \
 ADD install.txt /tmp/mcr/install.txt
 
 RUN cd /tmp/mcr/ && \
-  wget --no-verbose http://ssd.mathworks.com/supportfiles/downloads/R2015b/deployment_files/R2015b/installers/glnxa64/MCR_R2015b_glnxa64_installer.zip && \
-  unzip MCR_R2015b_glnxa64_installer.zip && \
+  wget --no-verbose http://ssd.mathworks.com/supportfiles/downloads/R2016b/deployment_files/R2016b/installers/glnxa64/MCR_R2016b_glnxa64_installer.zip && \
+  unzip MCR_R2016b_glnxa64_installer.zip && \
   ./install -inputFile install.txt
 
