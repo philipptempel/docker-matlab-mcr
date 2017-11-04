@@ -16,8 +16,9 @@ RUN apt-get install -yq \
 ADD install.txt /tmp/mcr/install.txt
 
 RUN cd /tmp/mcr/ && \
-  wget --no-verbose http://ssd.mathworks.com/supportfiles/downloads/R2017b/deployment_files/R2017b/installers/glnxa64/MCR_R2017b_glnxa64_installer.zip && \
-  unzip MCR_R2017b_glnxa64_installer.zip && \
+  wget --no-verbose http://ssd.mathworks.com/supportfiles/downloads/R2016b/deployment_files/R2016b/installers/glnxa64/MCR_R2016b_glnxa64_installer.zip && \
+  unzip MCR_R2016b_glnxa64_installer.zip && \
   ./install -inputFile install.txt
 
-ENV LD_LIBRARY_PATH /usr/sbin/mcr/runtime/glnxa64:/usr/sbin/mcr/bin/glnxa64:/usr/sbin/mcr/sys/os/glnxa64
+ENV LD_LIBRARY_PATH /usr/sbin/mcr/v91/runtime/glnxa64:/usr/sbin/mcr/v91/bin/glnxa64:/usr/sbin/mcr/v91/sys/os/glnxa64
+
