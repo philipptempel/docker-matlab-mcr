@@ -20,5 +20,5 @@ RUN cd /tmp/mcr/ && \
   unzip MCR_R2018b_glnxa64_installer.zip && \
   ./install -inputFile /tmp/mcr/install.txt
 
-ENV LD_LIBRARY_PATH /usr/sbin/mcr/v93/runtime/glnxa64:/usr/sbin/mcr/v93/bin/glnxa64:/usr/sbin/mcr/v93/sys/os/glnxa64
+ENV LD_LIBRARY_PATH /usr/sbin/mcr/v95/runtime/glnxa64:/usr/sbin/mcr/v95/bin/glnxa64:/usr/sbin/mcr/v95/sys/os/glnxa64:/usr/sbin/mcr/v95/extern/bin/glnxa64
 
