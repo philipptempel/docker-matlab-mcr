@@ -17,7 +17,7 @@ RUN apt-get install -yq \
 ADD install.txt /tmp/mcr/install.txt
 
 RUN cd /tmp/mcr/ && \
-  wget http://ssd.mathworks.com/supportfiles/downloads/R2019b/Release/3/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2019b_Update_3_glnxa64.zip && \
+  wget --no-verbose http://ssd.mathworks.com/supportfiles/downloads/R2019b/Release/3/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2019b_Update_3_glnxa64.zip && \
   unzip MATLAB_Runtime_R2019b_Update_3_glnxa64.zip && \
   ./install -inputFile /tmp/mcr/install.txt
 
